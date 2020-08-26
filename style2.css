@@ -1,0 +1,19 @@
+#grid {
+	display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+	grid-template-rows: 3fr 3fr 3fr;
+}
+
+.col {
+	background-color: #2f2f2f;
+	padding: 50px;
+	margin: 10px;
+}
+
+#col1, #col2, #col3, #col4, #col7 {
+	grid-column: span 1;
+}
+
+#col5, #col6 {
+	grid-column: span 2;
+}

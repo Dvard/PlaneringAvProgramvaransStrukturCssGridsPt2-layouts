@@ -1,0 +1,30 @@
+#grid {
+	display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+	grid-template-rows: 3fr 3fr 3fr;
+}
+
+.col {
+	background-color: #2f2f2f;
+	padding: 50px;
+	margin: 10px;
+}
+
+#col1 {
+	grid-column: span 3;
+}
+
+#col2, #col3, #col4, #col5 {
+	grid-column: span 1;
+}
+
+#col4 {
+	grid-row: span 2;
+}
+
+@media screen and (max-width: 40em) {
+	.col {
+		grid-column: span 3 !important;
+		grid-row: span 1 !important;
+	}
+}
